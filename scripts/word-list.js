@@ -72,8 +72,8 @@ const wordList = [
         hint: "18) Examples of top-level containers in Swing include __________ and __________."
     },
     {
-        word: "interface",
-        hint: "19) The Java interface that allows a class to inherit the abstract methods of multiple interfaces is called ________"
+        word: "blueprint",
+        hint: "19) Interface is the ________ of a class"
     },
     {
         word: "token",
