@@ -128,7 +128,7 @@ body{
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 .game-modal img {
-    max-width: 130px;
+    max-width: 300px;
     margin-bottom: 20px;
 }
 .game-modal img[src="images/victory.gif"] {
