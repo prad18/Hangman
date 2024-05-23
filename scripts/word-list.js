@@ -1,46 +1,75 @@
 const wordList = [
     {
-        word: "voltage",
-        hint: "1)Traditional computing is sensitive to variation in ____ levels which has cause errors "
+        word: "synchronized",
+        hint: "1)The __________ keyword is used to ensure that a method can be accessed by only one thread at a time."
     },
     {
-        word: "loihi",
-        hint: "2)Example of neuromorphic computres intel"
+        word: "thread",
+        hint: "2)In Java, you can create a thread by extending the __________ class"
     },
     {
-        word: "spikes",
-        hint: "3)What does neural networks use to communicate between neurons?"
+        word: "garbage",
+        hint: "3)The ___ collector is responsible for reclaiming memory occupied by unreachable objects to avoid memory leaks."
     },
     {
-        word: "truenorth",
-        hint: "4)Example of neuromorphic computers ibm?"
+        word: "multiple",
+        hint: "4)Java does not support _____ inheritance"
     },
     {
-        word: "noise",
-        hint: "5) Traditional computing is sensitive to ______"
+        word: "parsing",
+        hint: "5)The process of converting a string into its equivalent numerical representation is called _____"
     },
     {
-        word: "electrochemical",
-        hint: "6) Neurons transmits signals through ______ pulses"
+        word: "final",
+        hint: "6) The keyword used in Java to prevent a method from being overridden in subclasses is _____"
     },
     {
-        word: "neuron",
-        hint: "7)What is the fundamental building block of an Artificial Neural Network (ANN)?"
+        word: "this",
+        hint: "7)The Java keyword used to refer to the current instance of a class from within its own instance methods is _____"
     },
     {
-        word: "carver",
-        hint: "8) Neuromorphic computing was first proposed by _____ mead"
+        word: "exception",
+        hint: "8) In Java, the mechanism used to handle errors and exceptional situations is called ______ handling"
     },
     {
-        word: "cognitive",
-        hint: "9) _____ computing is an application of nueromorphic computing"
+        word: "serializable",
+        hint: "9) The interface in Java that allows objects to be serialized and deserialized is called"
     },
     {
-        word: "parallel",
-        hint: "10)____ processing is a key feature of neuromorphic computing"
+        word: "cloning",
+        hint: "10) The process of creating a new object based on an existing one is called"
     },
     {
-        word: "brain",
-        hint: "11)Neuromorphic computing mimics _____'s architecture"
+        word: "overriding",
+        hint: "11) The process of defining a method in a subclass that has the same signature as a method in its superclass is known as method __________."
+    },
+    {
+        word: "static",
+        hint: "12) The __________ keyword in Java can be used to create variables and methods that belong to the class, rather than instances of the class."
+    },
+    {
+        word: "byte stream",
+        hint: "13) Serialization in Java is the process of converting an object into a __________ format, which can be stored or transmitted."
+    },
+    {
+        word: "button textField",
+        hint: "14) Examples of components in AWT include __________ and __________."
+    },
+    {
+        word:"event listener",
+        hint:"15) In Swing, event handling involves creating and registering __________, which are objects that respond to events such as button clicks."
+    },
+    {
+        word:"joptionpane",
+        hint:"16) The ____ class provides standard dialog boxes, such as message dialogs, input dialogs, and confirm dialogs."
+    },
+    {
+        word: "overhead",
+        hint: "17) Thread pools improve performance by reusing threads and reducing the ___________ associated with thread creation."
+    },
+    {
+        word: "jframe jdialog",
+        hint: "18) Examples of top-level containers in Swing include __________ and __________."
     }
+
 ];

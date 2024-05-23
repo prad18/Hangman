@@ -27,7 +27,7 @@ const getRandomWord = () => {
     // Increment the index for the next round
     wordIndex = (wordIndex + 1) % wordList.length;
 
-    currentWord = word; // Keep spaces in the word
+    currentWord = word; // Making currentWord as the selected word
     document.querySelector(".hint-text b").innerText = hint;
     resetGame();
 }
@@ -56,11 +56,10 @@ const initGame = (button, clickedLetter) => {
     if (currentWord.toLowerCase().includes(clickedLetter.toLowerCase())) {
         // Showing all correct letters on the word display
         [...currentWord].forEach((letter, index) => {
-            if (letter.toLowerCase() === clickedLetter.toLowerCase() || letter === ' ') {
+            if (letter.toLowerCase() === clickedLetter.toLowerCase()) {
                 correctLetters.push(letter);
-                const wordDisplayLetter = wordDisplay.querySelectorAll("li")[index];
-                wordDisplayLetter.innerText = letter;
-                wordDisplayLetter.classList.add("guessed");
+                wordDisplay.querySelectorAll("li")[index].innerText = letter;
+                wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
         });
     } else {
@@ -75,9 +74,8 @@ const initGame = (button, clickedLetter) => {
     // Calling gameOver function if any of these conditions are met
     if (wrongGuessCount === maxGuesses) return gameOver(false);
 
-    // Check if all letters in the word have been guessed, including spaces
-    const isWordGuessed = currentWord.split("").every(letter => correctLetters.includes(letter.toLowerCase()) || letter === ' ');
-    if (isWordGuessed) {
+    // Checking if all letters in the word have been guessed
+    if (currentWord.split("").every(letter => correctLetters.includes(letter.toLowerCase()))) {
         return gameOver(true);
     }
 };
@@ -97,3 +95,4 @@ wordIndex = 0;
 getRandomWord();
 
 playAgainBtn.addEventListener("click", getRandomWord);
+
