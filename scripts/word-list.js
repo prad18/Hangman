@@ -61,7 +61,7 @@ const wordList = [
     },
     {
         word:"joptionpane",
-        hint:"16) The ____ class provides standard dialog boxes, such as message dialogs, input dialogs, and confirm dialogs."
+        hint:"16) The ____ class provides standard dialog boxes, such as message dialogs, input dialogs, and confirm dialogs."
     },
     {
         word: "overhead",
@@ -70,6 +70,14 @@ const wordList = [
     {
         word: "jframe jdialog",
         hint: "18) Examples of top-level containers in Swing include __________ and __________."
+    },
+    {
+        word: "interface",
+        hint: "19) The Java interface that allows a class to inherit the abstract methods of multiple interfaces is called ________"
+    },
+    {
+        word: "token",
+        hint: "20) The smallest meaningful element of a Java program is called a _____."
     }
 
 ];
