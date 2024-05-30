@@ -1,83 +1,82 @@
 const wordList = [
     {
-        word: "synchronized",
-        hint: "1)The __________ keyword is used to ensure that a method can be accessed by only one thread at a time."
+        word: "table",
+        hint: "1) What is a collection of related data stored in rows and columns called?"
     },
     {
-        word: "thread",
-        hint: "2)In Java, you can create a thread by extending the __________ class"
+        word: "row",
+        hint: "2) What is a horizontal component of a table, representing a single data item, called?"
     },
     {
-        word: "garbage",
-        hint: "3)The ___ collector is responsible for reclaiming memory occupied by unreachable objects to avoid memory leaks."
+        word: "column",
+        hint: "3) What is a vertical component of a table, representing an attribute of the entity, called?"
     },
     {
-        word: "multiple",
-        hint: "4)Java does not support _____ inheritance"
+        word: "key",
+        hint: "4) What is an attribute that uniquely identifies a row in a table?"
     },
     {
-        word: "parsing",
-        hint: "5)The process of converting a string into its equivalent numerical representation is called _____"
+        word: "index",
+        hint: "5) What is a database object that improves the speed of data retrieval operations?"
     },
     {
-        word: "final",
-        hint: "6) The keyword used in Java to prevent a method from being overridden in subclasses is _____"
+        word: "query",
+        hint: "6) What is a request for data or information from a database called?"
     },
     {
-        word: "this",
-        hint: "7)The Java keyword used to refer to the current instance of a class from within its own instance methods is _____"
+        word: "sql",
+        hint: "7) What is the standardized language used to manage and manipulate relational databases?"
     },
     {
-        word: "exception",
-        hint: "8) In Java, the mechanism used to handle errors and exceptional situations is called ______ handling"
+        word: "schema",
+        hint: "8) What is the structure or blueprint of a database called?"
     },
     {
-        word: "serializable",
-        hint: "9) The interface in Java that allows objects to be serialized and deserialized is called"
+        word: "field",
+        hint: "9) What is another word for a column in a table?"
     },
     {
-        word: "cloning",
-        hint: "10) The process of creating a new object based on an existing one is called"
+        word: "record",
+        hint: "10) What is another word for a row in a table?"
     },
     {
-        word: "overriding",
-        hint: "11) The process of defining a method in a subclass that has the same signature as a method in its superclass is known as method __________."
+        word: "primary key",
+        hint: "11) What is a unique identifier for a record in a database table?"
     },
     {
-        word: "static",
-        hint: "12) The __________ keyword in Java can be used to create variables and methods that belong to the class, rather than instances of the class."
+        word: "foreign key",
+        hint: "12) What is used to ensure data integrity and establish a link between two tables?"
     },
     {
-        word: "byte stream",
-        hint: "13) Serialization in Java is the process of converting an object into a __________ format, which can be stored or transmitted."
+        word: "stored procedure",
+        hint: "13) What is the term for a set of SQL commands saved to perform a repetitive task?"
     },
     {
-        word: "button textfield",
-        hint: "14) Examples of components in AWT include __________ and __________."
+        word: "select",
+        hint: "14) What is the SQL command to retrieve data from a database?"
     },
     {
-        word:"event listener",
-        hint:"15) In Swing, event handling involves creating and registering __________, which are objects that respond to events such as button clicks."
+        word: "normalization",
+        hint: "15) What is the process of organizing data to reduce redundancy called?"
     },
     {
-        word:"joptionpane",
-        hint:"16) The ____ class provides standard dialog boxes, such as message dialogs, input dialogs, and confirm dialogs."
+        word: "view",
+        hint: "16) What is a temporary table in SQL that is created by a query called?"
     },
     {
-        word: "overhead",
-        hint: "17) Thread pools improve performance by reusing threads and reducing the ___________ associated with thread creation."
+        word: "commit",
+        hint: "17) What is a type of database transaction that ensures all operations within it are completed successfully?"
     },
     {
-        word: "jframe jdialog",
-        hint: "18) Examples of top-level containers in Swing include __________ and __________."
+        word: "insert",
+        hint: "18) What is the SQL command used to add a new record to a table?"
     },
     {
-        word: "blueprint",
-        hint: "19) Interface is the ________ of a class"
+        word: "acid",
+        hint: "19) What is a set of rules that guarantees that database transactions are processed reliably?"
     },
     {
-        word: "token",
-        hint: "20) The smallest meaningful element of a Java program is called a _____."
+        word: "secondary index",
+        hint: "20) What is a non-unique index that can improve the performance of data retrieval?"
     }
-
 ];
