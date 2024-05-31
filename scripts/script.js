@@ -4,6 +4,8 @@ const keyboardDiv = document.querySelector(".keyboard");
 const hangmanImage = document.querySelector(".hangman-box img");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = gameModal.querySelector("button");
+const victoryImages = ["images/victory1.png", "images/victory2.jpg", "images/victory3.jpg","images/victory4.jpg","images/victory5.jpg","images/victory6.jpg"];
+const loseImages = ["images/lost3.jpg","images/lost4.jpg"];
 
 // Initializing game variables
 let currentWord, correctLetters, wrongGuessCount, wordIndex;
@@ -32,7 +34,7 @@ const getRandomWord = () => {
     resetGame();
 }
 
-const gameOver = (isVictory) => {
+/*const gameOver = (isVictory) => {
     // After the game is complete, show the modal with relevant details
     const modalText = isVictory ? `You found the word:` : 'The correct word was:';
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.png`;
@@ -49,7 +51,26 @@ const gameOver = (isVictory) => {
     }
 
     gameModal.classList.add("show");
+}*/
+
+const gameOver = (isVictory) => {
+    const modalText = isVictory ? `You found the word:` : 'The correct word was:';
+    const randomImage = isVictory 
+        ? victoryImages[Math.floor(Math.random() * victoryImages.length)]
+        : loseImages[Math.floor(Math.random() * loseImages.length)];
+    gameModal.querySelector("img").src = randomImage;
+    gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
+    gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
+    playAgainBtn.innerText = isVictory ? 'Next Word' : 'Try Again';
+
+    if (wordIndex === 0) {
+        playAgainBtn.innerText = 'Reload page to play again';
+        playAgainBtn.disabled = true;
+    }
+
+    gameModal.classList.add("show");
 }
+
 
 const initGame = (button, clickedLetter) => {
     // Checking if clickedLetter exists in the currentWord (case-insensitive)
